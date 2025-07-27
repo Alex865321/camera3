@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icons of Light: The World's 20 Most Collectible Cameras</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles to complement Tailwind CSS */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark background */
+            color: #d1d5db; /* Light gray text */
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lora', serif;
+            font-weight: 600;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header and Navigation -->
+    <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 shadow-lg shadow-black/20">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" id="home-link" class="text-2xl font-bold text-white font-lora">Icons of Light</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" id="nav-home" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" id="nav-about" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Defining Collectibility</a>
+                        <a href="#" id="nav-conclusion" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Future of Collecting</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" id="mobile-nav-home" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#" id="mobile-nav-about" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Defining Collectibility</a>
+                <a href="#" id="mobile-nav-conclusion" class="nav-link text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Future of Collecting</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Content will be injected here by JavaScript -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900">
+        <div class="container mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 Icons of Light. All rights reserved.</p>
+            <p class="mt-1">A digital adaptation of an expert report on collectible cameras.</p>
+        </div>
+    </footer>
+
+    <script>
+        // --- DATA ---
+        // This is where all the information from your document is stored.
+        const cameras = [
+            { id: 1, rank: 1, name: "Leica 0-Series (No. 105)", type: "35mm Film Prototype", era: "Pioneering (1923)", original_price: "N/A (Prototype)", current_value: "~$12,700,000", synopsis: "The Leica 0-Series represents the very genesis of 35mm photography. It was not a commercial product but one of approximately twenty prototypes created in 1923 by Ernst Leitz to test the market's appetite for a compact camera using 35mm cinema film. This specific camera, serial number 105, is far more than a prototype; it was the personal camera of its visionary designer, Oskar Barnack, making it one of the most significant photographic artifacts in existence.", analysis: "The collectibility of this camera rests on the absolute pillars of innovation and provenance. Barnack's design choice for the 36x24mm negative size established the 'full-frame' format that remains the professional standard a century later. The astronomical difference in value between this unit and other 0-Series models is not due to any physical difference but to its direct, documented connection to the inventor. This illustrates that at the highest echelon of collecting, the narrative and historical linkage of an object can be worth multiples of the object itself.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Leica+0-Series" },
+            { id: 2, rank: 2, name: "Kodak DCS 100", type: "Digital SLR (Nikon F3 Body)", era: "Digital Revolution (1991)", original_price: "$20,000", current_value: "$5,000 - $15,000+", synopsis: "The Kodak DCS 100 marks the birth of the commercial DSLR. Built upon the chassis of a Nikon F3 film camera, it was the first digital single-lens reflex system made commercially available. It was a cumbersome, two-piece beast with a massive price tag, aimed squarely at photojournalists who needed to transmit images faster than was possible with film.", analysis: "The DCS 100 is collectible for its absolute historical primacy. It was a landmark product that physically bridged the analog and digital worlds, mating a professional film body to a 1.3-megapixel digital sensor and a separate, shoulder-carried Digital Storage Unit (DSU). With only 987 units ever sold, it is exceptionally rare. Owning one is owning the starting point of modern photojournalism.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Kodak+DCS+100" },
+            { id: 3, rank: 3, name: "Leica M3", type: "35mm Film Rangefinder", era: "Mid-Century Classic (1954)", original_price: "'Lifetime Investment'", current_value: "$800 - $2,500", synopsis: "The Leica M3 is the camera that perfected the 35mm rangefinder and arguably defined the brand's modern identity. Introduced at Photokina in 1954, it was a complete departure from the previous screw-mount cameras, establishing a new standard for speed, precision, and optical quality.", analysis: "The M3's collectibility is rooted in its groundbreaking innovation and sublime design. It introduced three critical features that became Leica hallmarks: the M-bayonet lens mount, a combined rangefinder/viewfinder, and automatically switching, parallax-corrected frame lines. Its all-mechanical, buttery-smooth operation offers a purely tactile experience that is still revered today.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Leica+M3" },
+            { id: 4, rank: 4, name: "Hasselblad 500C/M", type: "Medium Format Film SLR", era: "Mid-Century Classic (1957)", original_price: "Not Available", current_value: "$1,500 - $3,500", synopsis: "The Hasselblad 500C is the undisputed icon of professional medium format photography. A marvel of Swedish engineering, its revolutionary modular system and partnership with Carl Zeiss optics made it the workhorse for the world's leading photographers. Its legendary status was cemented when it was chosen by NASA to document humanity's journey to the Moon.", analysis: "The 500C's appeal is multifaceted. Its core innovation was its modularity; the ability to swap lenses, film magazines, and viewfinders offered unparalleled versatility. By placing the leaf shutter within the lens, it enabled flash synchronization at any shutter speed—a critical advantage for studio photographers. Its cultural resonance is immense.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Hasselblad+500C/M" },
+            { id: 5, rank: 5, name: "Nikon F", type: "35mm Film SLR", era: "Mid-Century Classic (1959)", original_price: "$233 (Body, 1963)", current_value: "$150 - $700", synopsis: "The Nikon F was the camera that shattered the German monopoly on professional photography and established Japan as the new industry leader. It was a rugged, utterly reliable, and comprehensive system camera that became the definitive workhorse for photojournalists, most famously documenting the Vietnam War.", analysis: "The Nikon F's collectibility stems from its revolutionary impact and bulletproof reputation. It was the first 35mm SLR to offer a complete, professional system from its first day of sale. Its modularity allowed it to be adapted for any conceivable task. Culturally, the F 'revolutionized the photographic market,' its reputation for being nearly indestructible made it the trusted tool for photographers in the most demanding environments.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Nikon+F" },
+            { id: 6, rank: 6, name: "Rolleiflex 2.8F", type: "Medium Format Film TLR", era: "Mid-Century Classic (1960)", original_price: "Not Available", current_value: "$1,600 - $3,500", synopsis: "The Rolleiflex 2.8F represents the zenith of the twin-lens reflex (TLR) camera design. An icon of mid-century photography, it is beloved for its unique top-down shooting posture, whisper-quiet leaf shutter, and the extraordinary image quality rendered by its legendary Carl Zeiss Planar or Schneider-Kreuznach Xenotar lens.", analysis: "The Rolleiflex's appeal is deeply tied to its unique design and superlative performance. The act of looking down into the brilliant waist-level finder creates a more contemplative and less confrontational connection with the subject. The 2.8F model is the most refined of the series, featuring a choice between two of the finest medium format lenses ever produced.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Rolleiflex+2.8F" },
+            { id: 7, rank: 7, name: "Canon F-1", type: "35mm Film SLR", era: "Mid-Century Classic (1971)", original_price: "~$220 (Body, 1971)", current_value: "$200 - $450", synopsis: "The Canon F-1 was the company's monumental answer to the dominant Nikon F. The result of a five-year development effort, the F-1 was a top-of-the-line professional system SLR designed from the ground up to be brutally tough, mechanically precise, and endlessly versatile.", analysis: "The F-1 is collectible as both a historical landmark and a robust photographic tool. It was Canon's first truly successful professional SLR system, built around the new FD lens mount. Canon engineered the camera to extreme standards of durability, guaranteeing it for 100,000 shutter cycles. This ruggedness made it a credible and formidable competitor to Nikon.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Canon+F-1" },
+            { id: 8, rank: 8, name: "Leica M6", type: "35mm Film Rangefinder", era: "Modern Film (1984)", original_price: "~$2,500 (1992)", current_value: "$2,500 - $4,500", synopsis: "The Leica M6 represents the perfect fusion of classic mechanical purity and modern convenience. It took the revered form factor of the M3 and integrated a highly accurate through-the-lens (TTL) light meter. This single addition made it arguably the most practical and desirable mechanical M-series camera for contemporary film photographers.", analysis: "The M6's collectibility lies in its perfect balance. It retains the 'Classic' M3 dimensions and all-mechanical operation that purists cherish, while the built-in meter streamlines the shooting process. For many, the M6 is the quintessential modern film Leica. The camera's enduring appeal was validated when Leica reissued it in 2022 at a premium price.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Leica+M6" },
+            { id: 9, rank: 9, name: "Mamiya 7II", type: "Medium Format Film Rangefinder", era: "Modern Film (1999)", original_price: "~$2,000 (Body, 2000)", current_value: "$4,000 - $5,500 (Kit)", synopsis: "Often hailed as the ultimate medium format travel camera, the Mamiya 7II delivers the breathtaking image quality of a large 6x7cm negative from a body that is shockingly lightweight, compact, and quiet. Paired with some of the sharpest interchangeable lenses ever produced, it occupies a unique and highly coveted space.", analysis: "The Mamiya 7II is prized for offering the best of two worlds: the immense detail of a medium format negative with the portability of a 35mm rangefinder. Its lenses are legendary for their optical perfection. It has a dedicated 'cult following' because there is no modern digital camera that offers the same combination of a massive imaging area, world-class optics, and featherlight portability.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Mamiya+7II" },
+            { id: 10, rank: 10, name: "Contax T2", type: "35mm Film Point & Shoot", era: "Modern Film (1990)", original_price: "Not Available", current_value: "$900 - $1,800", synopsis: "The Contax T2 is the undisputed king of the 1990s premium point-and-shoot craze. Housed in a beautifully machined titanium body, it features a retractable, razor-sharp Carl Zeiss Sonnar 38mm f/2.8 T* lens. Once a niche luxury item, its popularity exploded after being adopted by celebrities and influencers.", analysis: "The T2 is a fascinating case study in how cultural resonance can redefine an object's value. Its modern collectibility was driven by its appearance in the hands of figures like Kendall Jenner and Frank Ocean. Beyond the hype, it is a superbly engineered camera, offering aperture-priority auto-exposure and manual focus control, features that set it apart from lesser point-and-shoots.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Contax+T2" },
+            { id: 11, rank: 11, name: "Pentax K1000", type: "35mm Film SLR", era: "Modern Film (1976)", original_price: "$299.50 (Kit, 1976)", current_value: "$150 - $300 (Kit)", synopsis: "The Pentax K1000 is, for many, the quintessential student camera. For over two decades, its simple, all-manual, and incredibly durable design made it the default choice for photography courses worldwide. It taught millions the fundamentals of exposure and composition.", analysis: "The K1000's collectibility is rooted in its cultural significance and functional purity. It is revered for its spartan, no-frills approach. Its fully mechanical shutter means it can operate at all speeds without a battery (the battery only powers the light meter). This reliability continues to drive strong demand from a new generation of film enthusiasts.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Pentax+K1000" },
+            { id: 12, rank: 12, name: "Olympus OM-1", type: "35mm Film SLR", era: "Mid-Century Classic (1972)", original_price: "Not Available", current_value: "$70 - $250 (Body)", synopsis: "The Olympus OM-1 was the camera that ignited the compact SLR revolution of the 1970s. Conceived by the legendary designer Yoshihisa Maitani, the OM-1 was shockingly small and light compared to its professional contemporaries, yet it sacrificed nothing in terms of professional features or build quality.", analysis: "The OM-1 is collectible for its landmark design and excellent performance. Its most lauded feature is its viewfinder, which is enormous and bright, putting even many modern high-end DSLRs to shame. Its unconventional ergonomics, with the shutter speed control on a ring around the lens mount, are praised by loyal users. The OM-1's design DNA influenced the entire industry for decades.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Olympus+OM-1" },
+            { id: 13, rank: 13, name: "Yashica T4 Super D", type: "35mm Film Point & Shoot", era: "Modern Film (1992)", original_price: "Not Available", current_value: "$400 - $950", synopsis: "The Yashica T4 Super D is the 'other' legendary premium point-and-shoot. While the Contax T2 often grabs the spotlight, the T4 boasts its own world-class lens: a Carl Zeiss Tessar 35mm f/3.5 T*. This lens is capable of producing incredibly sharp and contrasty images from an unassuming plastic body.", analysis: "The T4's value is almost entirely derived from the performance of its lens. Like its Contax cousin, its value has been significantly inflated by social media hype. The 'Super D' model adds a top-mounted, waist-level 'Super Scope' viewfinder, a useful feature for candid street photography. These cameras are becoming 'time bombs' as their 30-year-old electronics are irreparable.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Yashica+T4" },
+            { id: 14, rank: 14, name: "Apple QuickTake 100", type: "Early Consumer Digital", era: "Digital Revolution (1994)", original_price: "$749", current_value: "$100 - $300", synopsis: "A fascinating footnote in the history of two tech giants, the Apple QuickTake 100 was one of the first consumer-level color digital cameras. Co-developed with Kodak, it was not a major commercial success, but its importance as an early, innovative Apple product makes it highly collectible.", analysis: "The QuickTake's appeal lies in its innovation and provenance. It was the first mass-produced color digital camera to sell for under $1,000. Its distinctive, binocular-like form is pure 1990s industrial design. The QuickTake line was one of the first product casualties upon Steve Jobs's return to Apple in 1997, adding another layer to its story.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Apple+QuickTake+100" },
+            { id: 15, rank: 15, name: "Epson R-D1", type: "Digital Rangefinder (APS-C)", era: "Digital Revolution (2004)", original_price: "$2,999 (Body)", current_value: "$1,500 - $2,500 (Body)", synopsis: "In a move that surprised the entire industry, printer company Epson—in collaboration with Cosina—beat Leica to the punch by releasing the world's first digital rangefinder camera. The R-D1 is an M-mount compatible camera with a quirky, analog-inspired design and a CCD sensor that has earned it a dedicated cult following.", analysis: "The R-D1 is a cult classic celebrated for its innovation and unique user experience. Its design is intentionally anachronistic; it features a manual film advance lever (used to cock the shutter) and a beautiful set of analog dials made by watchmaker Seiko. Its 6-megapixel APS-C CCD sensor is lauded for rendering beautiful, film-like colors.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Epson+R-D1" },
+            { id: 16, rank: 16, name: "Nikon D1", type: "Digital SLR (APS-C)", era: "Digital Revolution (1999)", original_price: "$5,500 (Body)", current_value: "$50 - $150 (Body)", synopsis: "The Nikon D1 was the camera that truly ignited the professional digital revolution. It was the first DSLR developed from the ground up entirely by a single major manufacturer, and it offered a combination of speed, image quality, and, crucially, a price point that shattered the existing market.", analysis: "The D1 is collectible purely for its historical impact. It offered a 2.7-megapixel sensor and 5 fps shooting for a price of $5,500—less than half that of its main competitor. This aggressive pricing made a professional-grade DSLR accessible to thousands of working photographers for the first time. Owning a D1 is 'like holding a piece of digital photography history.'", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Nikon+D1" },
+            { id: 17, rank: 17, name: "Canon EOS 5D Mark II", type: "Digital SLR (Full-Frame)", era: "Digital Revolution (2008)", original_price: "$2,699 (Body)", current_value: "$250 - $450 (Body)", synopsis: "The Canon 5D Mark II is a landmark camera that had two revolutionary impacts: it brought high-quality full-frame digital photography to a wider audience, and it completely changed the world of filmmaking. It was the first DSLR to offer full 1080p HD recording on a large, full-frame sensor.", analysis: "The 5D Mark II's collectibility is cemented by its immense cultural and technological impact. Its video capabilities launched the 'HDSLR revolution' and the careers of countless videographers. Entire episodes of network television shows were filmed on it. For still photographers, its 21-megapixel full-frame sensor delivered stunning images. It's one of the most significant technology products of the 21st century.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Canon+5D+Mark+II" },
+            { id: 18, rank: 18, name: "Fujifilm X100V", type: "Digital Compact (APS-C)", era: "Modern Classic (2020)", original_price: "$1,399", current_value: "$1,400 - $1,800", synopsis: "The Fujifilm X100V is the camera that became a viral social media sensation. As the fifth generation of Fujifilm's esteemed X100 series, it refined the beloved formula with a critically important new lens, a tilting rear screen, and weather-sealing. Its beautiful retro aesthetics and renowned film simulations made it a TikTok phenomenon.", analysis: "The X100V is a prime example of a modern 'hype camera.' A 'TikTok craze' saw its value on the used market skyrocket. Underneath the hype, it is an exceptional photographic tool, featuring a classic rangefinder-style body, a unique hybrid optical/electronic viewfinder, and a sharp, fixed 23mm f/2 lens. It represents a unique intersection of camera technology, social media trends, and consumer culture.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Fujifilm+X100V" },
+            { id: 19, rank: 19, name: "Ricoh GR III/IIIx", type: "Digital Compact (APS-C)", era: "Modern Classic (2019)", original_price: "~$900 - $1,000", current_value: "$850 - $1,200", synopsis: "The Ricoh GR series is the embodiment of the ultimate pocket street photography camera. For decades, these cameras have maintained a fervent cult following for their unwavering dedication to a singular purpose: minimalist design, unparalleled one-handed ergonomics, true pocketability, and the astonishing image quality of a large APS-C sensor.", analysis: "The GR's collectibility is born from its steadfast design philosophy. Ricoh's stated concept is to create the 'most powerful snapshot camera,' and it achieves this by eschewing fads in favor of pure photographic function. The GR III and IIIx pack a 24-megapixel APS-C sensor and a phenomenal prime lens into a body that genuinely disappears into a pocket.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Ricoh+GR+III" },
+            { id: 20, rank: 20, name: "Leica Q2", type: "Digital Compact (Full-Frame)", era: "Modern Classic (2019)", original_price: "$4,995", current_value: "$3,500 - $4,200", synopsis: "The Leica Q2 represents the modern Leica experience, perfected. It brilliantly fuses a high-resolution 47.3-megapixel full-frame sensor with a fixed, optically stabilized Summilux 28mm f/1.7 ASPH. lens of breathtaking quality. All of this is housed in a beautifully crafted, minimalist, and weather-sealed body.", analysis: "The Q2's collectibility is driven by its impeccable balance of performance, design, and brand prestige. It delivers the quintessential Leica image quality in a streamlined, modern package with superb autofocus. The fixed lens is perfectly matched to the sensor. Leica digital models, and the Q series in particular, 'hold their values better than any digital cameras out there,' cementing their status as modern collectibles.", image_url: "https://placehold.co/600x400/1a202c/a0aec0?text=Leica+Q2" }
+        ];
+        
+        // --- PAGE CONTENT TEMPLATES ---
+        const mainContent = document.getElementById('main-content');
+
+        const homePageTemplate = `
+            <div class="text-center mb-12 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Icons of Light</h1>
+                <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-300">An exploration of the world's 20 most collectible cameras. More than mere machines, these are cultural artifacts, marvels of design, and silent witnesses to history.</p>
+            </div>
+            <div id="camera-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Camera cards will be injected here -->
+            </div>
+        `;
+
+        const aboutPageTemplate = `
+            <div class="max-w-4xl mx-auto bg-gray-800/50 p-8 rounded-lg shadow-lg fade-in">
+                <h1 class="text-3xl font-bold text-white mb-6">Defining Collectibility</h1>
+                <div class="space-y-6 text-gray-300 leading-relaxed">
+                    <p>The value of a collectible camera is determined by a confluence of factors that extend far beyond its simple ability to take a picture. This report analyzes the world's most sought-after cameras through five core pillars of collectibility:</p>
+                    <ul class="list-disc list-inside space-y-4 pl-4">
+                        <li><strong class="text-white">Innovation:</strong> A camera that represents a significant technological leap or was a "first" of its kind. This could be the first commercially successful DSLR or a camera that integrated a revolutionary feature that became an industry standard.</li>
+                        <li><strong class="text-white">Rarity & Provenance:</strong> The scarcity of a model, whether from a limited production run or the attrition of time. Provenance—the documented history of a specific unit, especially its connection to a famous photographer or event—can multiply its value exponentially.</li>
+                        <li><strong class="text-white">Design & Ergonomics:</strong> The camera as an object of beauty and function. This includes the choice of materials, the tactile feel of its controls, and an operational logic that creates a unique and desirable user experience.</li>
+                        <li><strong class="text-white">Cultural Resonance:</strong> A camera that has transcended its function to become an icon, popularized by celebrity use, its appearance in films, or its deep association with a specific photographic movement.</li>
+                        <li><strong class="text-white">Performance & Image Quality:</strong> The ability of a camera and its lenses to produce a distinct and revered "look" that is difficult to replicate, often attributed to legendary optics or unique sensor technology.</li>
+                    </ul>
+                    <h2 class="text-2xl font-bold text-white pt-4">An Artifact vs. A Tool</h2>
+                    <p>The world of camera collecting is defined by a fundamental dichotomy: the camera as a priceless artifact versus the camera as a superlative tool. At one end lies a piece like Oskar Barnack's personal Leica prototype, an object whose value is tied entirely to its unique place in history—an artifact to be preserved, not used. At the other end is a camera like the Pentax K1000, a mass-produced workhorse whose collectibility stems from its reputation as a durable, reliable, and perfect tool for learning the craft of photography. This collection navigates both definitions of "collectible," recognizing that a camera's worth can be derived either from its untouchable history or from its enduring, tangible utility.</p>
+                </div>
+            </div>
+        `;
+
+        const conclusionPageTemplate = `
+            <div class="max-w-4xl mx-auto bg-gray-800/50 p-8 rounded-lg shadow-lg fade-in">
+                <h1 class="text-3xl font-bold text-white mb-6">The Future of Camera Collecting</h1>
+                <div class="space-y-6 text-gray-300 leading-relaxed">
+                    <h2 class="text-2xl font-bold text-white">Legacy in a Digital Age</h2>
+                    <p>The landscape of camera collecting is a study in contrasts. Mechanical titans of the mid-20th century, like the Leica M3 and Nikon F, derive their enduring worth from historical significance and near-infinite repairability. They are timeless tools built of brass and glass. In contrast, electronic marvels from the late 20th and early 21st centuries face a "repairability cliff". As proprietary electronic components fail, these cameras risk becoming beautiful but inert objects, their high values precarious and balanced against the finite lifespan of their circuitry.</p>
+                    <h2 class="text-2xl font-bold text-white pt-4">The Makings of a Modern Classic</h2>
+                    <p>The criteria for what makes a camera a classic are evolving. While historical firsts and mechanical purity will always anchor the market, a new set of attributes is defining the modern collectible. In an era where image-capture is ubiquitous, the cameras that achieve collectible status are those that offer a specialized and irreplaceable experience. Future classics will likely be cameras that assert a strong identity. This could be through:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4">
+                        <li><strong>A Singular Design Philosophy:</strong> Like the unwavering focus of the Ricoh GR series on the needs of the street photographer.</li>
+                        <li><strong>A Unique "Look":</strong> A distinct and irreplicable image quality, such as the film-like rendering of Epson's R-D1.</li>
+                        <li><strong>A Tactile Experience:</strong> Exceptional, dedicated ergonomics that transform the act of taking a picture into a deliberate, engaging process.</li>
+                    </ul>
+                    <p>In an age of digital homogeneity, the cameras that will be most prized tomorrow are those that are most unapologetically themselves today: specialized, beautiful, and purposeful objects of light.</p>
+                </div>
+            </div>
+        `;
+
+        // --- RENDER FUNCTIONS ---
+        function renderHomePage() {
+            mainContent.innerHTML = homePageTemplate;
+            const grid = document.getElementById('camera-grid');
+            cameras.forEach(camera => {
+                const card = document.createElement('div');
+                card.className = 'bg-gray-800 rounded-lg overflow-hidden shadow-lg card-hover-effect cursor-pointer';
+                card.innerHTML = `
+                    <img src="${camera.image_url}" alt="${camera.name}" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a202c/a0aec0?text=Image+Not+Found';">
+                    <div class="p-4">
+                        <p class="text-sm text-gray-400">#${camera.rank}</p>
+                        <h3 class="text-lg font-semibold text-white truncate">${camera.name}</h3>
+                        <p class="text-sm text-gray-300">${camera.era}</p>
+                    </div>
+                `;
+                card.addEventListener('click', () => renderCameraPage(camera.id));
+                grid.appendChild(card);
+            });
+        }
+
+        function renderCameraPage(id) {
+            const camera = cameras.find(c => c.id === id);
+            if (!camera) {
+                renderHomePage();
+                return;
+            }
+            mainContent.innerHTML = `
+                <div class="max-w-5xl mx-auto fade-in">
+                    <button id="back-to-home" class="mb-6 text-gray-300 hover:text-white">&larr; Back to List</button>
+                    <div class="bg-gray-800/50 rounded-lg shadow-lg overflow-hidden">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img src="${camera.image_url}" alt="${camera.name}" class="w-full h-64 md:h-full object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1a202c/a0aec0?text=Image+Not+Found';">
+                            </div>
+                            <div class="p-8 md:w-1/2">
+                                <p class="text-indigo-400 font-bold">Rank #${camera.rank}</p>
+                                <h1 class="text-3xl md:text-4xl font-bold text-white mt-1">${camera.name}</h1>
+                                <p class="text-gray-400 mt-2">${camera.type} &bull; ${camera.era}</p>
+                                <div class="mt-6 grid grid-cols-2 gap-4 text-center">
+                                    <div>
+                                        <p class="text-sm text-gray-400 uppercase tracking-wider">Original Price</p>
+                                        <p class="text-lg font-semibold text-white">${camera.original_price}</p>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-400 uppercase tracking-wider">Current Value</p>
+                                        <p class="text-lg font-semibold text-white">${camera.current_value}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-8">
+                            <h2 class="text-2xl font-bold text-white">Synopsis</h2>
+                            <p class="mt-4 text-gray-300 leading-relaxed">${camera.synopsis}</p>
+                            <h2 class="text-2xl font-bold text-white mt-8">Collectibility Analysis</h2>
+                            <p class="mt-4 text-gray-300 leading-relaxed">${camera.analysis}</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('back-to-home').addEventListener('click', renderHomePage);
+            window.scrollTo(0, 0);
+        }
+
+        function renderAboutPage() {
+            mainContent.innerHTML = aboutPageTemplate;
+            window.scrollTo(0, 0);
+        }
+
+        function renderConclusionPage() {
+            mainContent.innerHTML = conclusionPageTemplate;
+            window.scrollTo(0, 0);
+        }
+
+        // --- EVENT LISTENERS & ROUTING ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initial page load
+            renderHomePage();
+
+            // Desktop navigation
+            document.getElementById('home-link').addEventListener('click', (e) => { e.preventDefault(); renderHomePage(); });
+            document.getElementById('nav-home').addEventListener('click', (e) => { e.preventDefault(); renderHomePage(); });
+            document.getElementById('nav-about').addEventListener('click', (e) => { e.preventDefault(); renderAboutPage(); });
+            document.getElementById('nav-conclusion').addEventListener('click', (e) => { e.preventDefault(); renderConclusionPage(); });
+
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:first-child').classList.toggle('hidden');
+                mobileMenuButton.querySelector('svg:last-child').classList.toggle('hidden');
+            });
+
+            // Mobile navigation
+            document.getElementById('mobile-nav-home').addEventListener('click', (e) => { e.preventDefault(); renderHomePage(); mobileMenu.classList.add('hidden'); });
+            document.getElementById('mobile-nav-about').addEventListener('click', (e) => { e.preventDefault(); renderAboutPage(); mobileMenu.classList.add('hidden'); });
+            document.getElementById('mobile-nav-conclusion').addEventListener('click', (e) => { e.preventDefault(); renderConclusionPage(); mobileMenu.classList.add('hidden'); });
+        });
+    </script>
+
+</body>
+</html>
